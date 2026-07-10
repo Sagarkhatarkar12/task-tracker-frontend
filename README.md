@@ -1,70 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+> A full‑stack task management web app built with the **MERN** stack (MongoDB, Express, React, Node) and **Tailwind CSS**.  
+> Developed as a technical assignment for the **Full Stack Developer Intern** position at **COLL-EDGE CONNECT**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Frontend | Backend API |
+|----------|-------------|
+| [**resilient-pavlova-d573b0.netlify.app**](https://resilient-pavlova-d573b0.netlify.app/) | [**tasks-tracker-2.onrender.com/api/tasks**](https://tasks-tracker-2.onrender.com/api/tasks) |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Click the badges above or the links to explore the live application.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Screenshots
 
-### `npm run build`
+*(Add your own screenshots here – they make your project stand out!)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Core Features (Mandatory)
+- ✅ **Create** – Add tasks with title, description, priority & due date
+- ✅ **Read** – View all tasks with real‑time updates
+- ✅ **Update** – Edit any existing task
+- ✅ **Delete** – Remove tasks with a confirmation dialog
+- ✅ **Form Validation** – Title is required; other fields are optional
+- ✅ **RESTful API** – Clean, well‑structured endpoints
+- ✅ **MongoDB Integration** – Persistent storage with Mongoose
+- ✅ **Responsive UI** – Works seamlessly on mobile, tablet & desktop
+- ✅ **Dynamic Updates** – No page refreshes (React state management)
 
-### `npm run eject`
+### Bonus Features
+- 🔍 **Search** – Filter tasks by title
+- 🏷️ **Filter by Status** – All / Pending / Completed
+- 📅 **Sort** – By Due Date or Priority
+- 🔔 **Toast Notifications** – Instant feedback for every action
+- 📊 **Dashboard Stats** – Total, Pending, Completed & High‑Priority counts
+- 🎨 **Tailwind CSS** – Modern utility‑first styling
+- 🎯 **Priority Badges** – Colour‑coded (High, Medium, Low)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React.js, Tailwind CSS, Axios, React Icons, React Toastify |
+| **Backend**  | Node.js, Express.js, MongoDB, Mongoose, Express Validator, CORS, Dotenv |
+| **Deployment** | Frontend – Netlify, Backend – Render |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📁 Project Structure
+task-tracker/
+├── backend/
+│ ├── .env
+│ ├── package.json
+│ ├── server.js
+│ ├── models/
+│ │ └── Task.js
+│ └── routes/
+│ └── taskRoutes.js
+├── frontend/
+│ ├── .env
+│ ├── package.json
+│ ├── tailwind.config.js
+│ ├── postcss.config.js
+│ ├── public/
+│ │ └── index.html
+│ └── src/
+│ ├── index.js
+│ ├── index.css
+│ ├── App.js
+│ ├── api.js
+│ └── components/
+│ ├── DashboardStats.js
+│ ├── TaskForm.js
+│ ├── TaskFilters.js
+│ └── TaskList.js
+└── README.md
